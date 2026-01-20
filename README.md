@@ -1,7 +1,5 @@
 # Swift Concurrency Lab
 
-**Live-code exploration of advanced Swift Concurrency architectural patterns runtime mechanics and production pitfalls**
-
 This project goes beyond basics to examine the complex reality of shipping concurrent apps It serves as a runnable handbook designed to demonstrate failure modes like reentrancy bugs and provide proven thread-safe solutions
 
 **Core Topics**
