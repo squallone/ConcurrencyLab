@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 @Observable
-@MainActor
 /// A thread-safe logger to display runtime interleaving in the UI
 class LogStore {
     var logs: [LogEntry] = []
