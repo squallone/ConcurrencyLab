@@ -7,10 +7,8 @@
 
 import Foundation
 
-// =========================================
 // SCENARIO A: The "Locked Room"
 // Quadrant: Non-Reentrant & Thread-Safe
-// =========================================
 @Observable
 class LockedCounterViewModel {
     var count = 0

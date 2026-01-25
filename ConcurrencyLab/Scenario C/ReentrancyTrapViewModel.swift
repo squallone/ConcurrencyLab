@@ -40,7 +40,7 @@ class ReentrancyTrapViewModel {
                 self.finalStock = resultingStock
                 
                 if resultingStock < 0 {
-                    logger.log("🚨 BUG CONFIRMED: Stock is \(resultingStock). Double sell occurred.", type: .error)
+                    logger.log("🚨 BUG CONFIRMED: Stock is \(resultingStock). Double sell occurred", type: .error)
                 }
             }
         }

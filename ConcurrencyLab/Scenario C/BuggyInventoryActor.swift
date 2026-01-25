@@ -7,10 +7,8 @@
 
 import Foundation
 
-// =========================================
 // SCENARIO C: The Reentrancy Trap (Buggy Actor)
 // Quadrant: Reentrant & Thread-Safe (But logically broken)
-// =========================================
 actor BuggyInventoryActor {
     var stockCount = 1
     
@@ -27,7 +25,7 @@ actor BuggyInventoryActor {
         _ = await PaymentGateway.simulateCharge(seconds: 1.0)
         
         // 3. RESUMPTION - The world might have changed
-        logger.log("▶️ \(buyer) resumed. Decrementing stock.")
+        logger.log("▶️ \(buyer) resumed. Decrementing stock")
         // BUG: We assume stock is still 1. It might be 0 now
         stockCount -= 1
         

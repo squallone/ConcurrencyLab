@@ -16,7 +16,7 @@ struct DangerZoneView: View {
         VStack(spacing: 20) {
             ScenarioHeader(
                 title: "Reentrant & NOT Thread-Safe",
-                subtitle: "Standard class with async methods. Simulating simultaneous multi-step updates.",
+                subtitle: "Standard class with async methods. Simulating simultaneous multi-step updates",
                 warningColor: .red
             )
             
@@ -37,7 +37,7 @@ struct DangerZoneView: View {
                 Text("🚨 INCONSISTENT STATE READ! 🚨")
                     .font(.headline)
                     .foregroundColor(.red)
-                Text("The UI read the object while it was paused halfway through an update, resulting in a mix of data (e.g., Alice's first name with Bob's last name).")
+                Text("The UI read the object while it was paused halfway through an update, resulting in a mix of data (e.g., Alice's first name with Bob's last name)")
                     .font(.caption)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)

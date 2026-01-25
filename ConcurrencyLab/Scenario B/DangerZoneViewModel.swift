@@ -29,7 +29,7 @@ class DangerZoneViewModel {
         logger.log("Target B: Bob Jones", type: .info)
         
         // 1. The "Writer" Tasks
-        // Launch competing tasks that violently update the profile simultaneously.
+        // Launch competing tasks that violently update the profile simultaneously
         Task {
             while isRunning {
                 // Competing Update A
